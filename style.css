@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+.container{
+    color: wheat;
+    width: 50%;
+    height: 100%;
+    border: 1px red solid;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap:10px;
+
+}
+h3{
+    color: rgba(255, 255, 255, 0.705);
+}
+.pasDiv, .critaire{
+    width: 50%;
+    position: relative;
+}
+input[type="text"]{
+    width: 100%;
+    background: #7C7C7F;
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#copyIcone{
+    position: absolute;
+    top:14%;
+    left: 90%;
+    color:white;
+    cursor: pointer;
+}
+.critaire{
+    padding: 10px;
+    background: #7C7C7F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.lenghtText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rangeDiv{
+    position: relative;
+    width: 100%;
+}
+#RANGE{
+    width: 100%;
+    background: transparent; /* Grey background */
+    outline: none;
+    appearance:none;
+    border-radius: 10px;
+    border:1px black solid;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    position: relative;
+    z-index: 88;
+}
+.coleurRange{
+    position: absolute;
+    background: red;
+    width: 0%;
+    border-radius: 10px;
+    top: 0%;
+    height: 87%;
+    left: 0%;
+    z-index: 10;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+}
+.strenght{
+    background: black;
+    padding: 10px;
+    color: #7C7C7F;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#typePa{
+    display: none;
+}
+.items{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+
+}
+.item{
+    width: 20%;
+    height: 100%;
+    border: 1px white solid;
+}
+.btnSubmit{
+    width: 100%;
+    background: rgba(61, 204, 61, 0.733);
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .pasDiv, .critaire{
+        width: 90%;
+    }
+
+}
+  
+  
+  
+  
+  

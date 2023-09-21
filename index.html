@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+     <div class="container">
+        <h3> Password Generator</h3>
+        <div class="pasDiv">
+            <input id="motPass" type="text" placeholder="H45?glfR#">
+       
+        </div>
+        <div class="critaire">
+            <div class="lenghtText">
+                <p>Character Lenght</p>
+                <p id="number">0</p>
+            </div>
+            <div class="rangeDiv">
+                <input type="range" name="n" id="RANGE" min="0" max="15" step="1" value="0">
+                <div class="coleurRange"></div>
+            </div>
+           
+
+
+            <div class="choice">
+               <label> <input type="checkbox" name="" value="maj"> Include Uppercase Letters</label>
+                <label><input type="checkbox" name="" value="min">  Include Lowercase Letters</label>
+               <label> <input type="checkbox" name="" value="nom">  Include Numbers</label>
+               <label> <input type="checkbox" name="" value="symbole">  Include Symbols</label>
+            </div>
+            <div class="strenght">
+                STRENGHT
+                <div class="items">
+                    <div id="typePa">Strong</div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="btnSubmit">
+                Generate
+            </div>
+        </div>
+        
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
